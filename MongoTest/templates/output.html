@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+
+{% block githin %}
+<a href=\wow>
+<button type="button" class="btn btn-primary">Home</button>
+<div>
+</a>
+        <table id="myTable" class="table table-hover myTable">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for d in data %}
+        <tr>
+            <td>{{d.firstname}}</td>
+            <td>{{d.lastname}}</td>
+            <td>{{d.email}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+<br>
+<br>
+
+
+
+{% endblock %}
